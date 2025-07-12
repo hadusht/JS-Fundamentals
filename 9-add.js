@@ -9,8 +9,6 @@ const add = (a, b) => {
   }
 };
 
-// Get command line arguments (skip node and script path)
 const [,, arg1, arg2] = process.argv;
 
-// Call the function with the provided arguments
 add(arg1, arg2);
