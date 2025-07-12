@@ -1,11 +1,3 @@
-function printFirstArg() {
-  
-  const args = arguments;
-  
-  const firstArg = args[0] !== undefined ? args[0] : "No argument";
-  
-  console.log(firstArg);
-}
+const firstArg = process.argv[2];
 
-printFirstArg("Hello");
-printFirstArg();
+console.log(firstArg !== undefined ? firstArg : "No argument");
